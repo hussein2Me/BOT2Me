@@ -8,7 +8,7 @@ async def cmd_list(event):
         if tgbotusername is None or input_str == "text":
             string = ""
             for i in CMD_LIST:
-                string += "✨" + i + "\n"
+                string += "✨ " + i + "\n"
                 for iter_list in CMD_LIST[i]:
                     string += "    `" + str(iter_list) + "`"
                     string += "\n"
@@ -21,7 +21,7 @@ async def cmd_list(event):
                         out_file,
                         force_document=True,
                         allow_cache=False,
-                        caption="**الأوامر**",
+                        caption="**COMMANDS**",
                         reply_to=reply_to_id
                     )
                     await event.delete()
@@ -29,16 +29,16 @@ async def cmd_list(event):
                 await event.edit(string)
         elif input_str:
             if input_str in CMD_LIST:
-                string = "الأوامر الموجودة في {}:".format(input_str)
+                string = "Commands found in {}:".format(input_str)
                 for i in CMD_LIST[input_str]:
                     string += "    " + i
                     string += "\n"
                 await event.edit(string)
             else:
-                await event.edit(input_str + " ليس مساعد صحيح!")
+                await event.edit(input_str + " امر غير صحيح!")
         else:
-            help_string = """Bot2Me مساعد ...\n مقدمة من @TEAM2ME\n
-`Bot2Me مساعد للكشف عن جميع الأوامر`"""
+            help_string = """Userbot Helper.. \n تم صنع بواسطه  @GcGcY\n
+`اوامر مساعدة `"""
             results = await bot.inline_query(  # pylint:disable=E0602
                 tgbotusername,
                 help_string
