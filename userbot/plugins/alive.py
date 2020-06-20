@@ -6,7 +6,7 @@ from platform import uname
 from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "لم يتم تحديد اسم بعد"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "hussein @GcGcY"
 
 @command(outgoing=True, pattern="^.alive$")
 async def amireallyalive(alive):
@@ -15,5 +15,5 @@ async def amireallyalive(alive):
                      "**✅Telethon version:- 6.9.0**\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n**✅Python: 3.7.3**\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n"
                      "**✅بوت مصنوع من:- @TEAM2ME\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n**"
                      "**✅حالة قاعدة البيانات: قواعد البيانات تعمل بشكل طبيعي!!**\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n💞دائما معك يا سيد \n`"
-                     f"`المالك`: {DEFAULTUSER}\n"
-                     "[Deploy this userbot Now](https://github.com/hussein2Me/Bot2Me)")
+                     f"`Dev`: {DEFAULTUSER}\n"
+                     "[channel](https://t.me/gcgcz)")
