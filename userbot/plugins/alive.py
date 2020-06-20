@@ -13,5 +13,5 @@ async def amireallyalive(alive):
                      "**✅Telethon version:- 6.9.0**\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n**✅Python: 3.7.3**\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n"
                      "**✅بوت مصنوع من:- @TEAM2ME\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n**"
                      "**✅حالة قاعدة البيانات: قواعد البيانات تعمل بشكل طبيعي!!**\n◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆\n💞دائما معك يا سيد \n`"
-                     f"dev:{DEFAULTUSER} \n"
+                     f"dev: {DEFAULTUSER}\n"
                      "[Channel](https://t.me/GcGcZ)")
