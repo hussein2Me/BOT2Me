@@ -1,4 +1,4 @@
-# Adapted from OpenUserBot
+ Adapted from OpenUserBot
 """Download & Upload Images on Telegram\n
 Syntax: `.img <Name>` or `.img (replied message)`
 \n Upgraded and Google Image Error Fixed by @NeoMatrix90 aka @kirito6969
@@ -13,14 +13,14 @@ from userbot.utils import admin_cmd
 
 @borg.on(admin_cmd(pattern="img ?(.*)"))
 async def img_sampler(event):
-    await event.edit("`جاري ...`")
+    await event.edit("`جاري البحث ...`")
     reply = await event.get_reply_message()
     if event.pattern_match.group(1):
         query = event.pattern_match.group(1)
     elif reply:
         query = reply.message
     else:
-    	await event.edit("`عفوا ، يرجى كتابه كلمة + img او عمل رد `")
+    	await event.edit("`um, mind mentioning what I actually need to search for ;_;`")
     	return
         
     lim = findall(r"lim=\d+", query)
