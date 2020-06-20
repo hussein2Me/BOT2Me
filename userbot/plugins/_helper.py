@@ -37,8 +37,8 @@ async def cmd_list(event):
             else:
                 await event.edit(input_str + " امر غير صحيح!")
         else:
-            help_string = """Userbot Helper.. \n تم صنع بواسطه  @GcGcY\n
-`اوامر مساعدة `"""
+            help_string = """قائمة المساعدة.. \n تم صنع بواسطه  @GcGcY\n
+`اليك جميع اوامرالمساعدة`"""
             results = await bot.inline_query(  # pylint:disable=E0602
                 tgbotusername,
                 help_string
